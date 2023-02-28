@@ -33,5 +33,13 @@ class Record:
             return False
     
     def get_longest_song(self):
-        return max(self.runtime)
+        longest_song = 0
+        longest_song_index = 0
+        for x, song in enumerate(self.songs):
+            if longest_song <= song.runtime:
+                longest_song = song.runtime
+                longest_song_index = x
+            return self.songs[longest_song_index]
+
+    
         
