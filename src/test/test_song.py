@@ -34,7 +34,7 @@ def test_song_get_genre():
     get_genre() should return the genre of the song
     """
     song = Song('You Oughta Know', 120, 'rock')
-    assert song.get_gengre() == 'rock'
+    assert song.get_genre() == 'rock'
 
 def test_song_get_record():
     """
